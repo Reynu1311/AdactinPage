@@ -1,0 +1,251 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "To verify the user can login to adactin",
+        "description": "",
+        "id": "to-validate-the-search-of-hotels-in-adactin-page;to-verify-the-user-can-login-to-adactin",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8001405000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user has to open url of the adactin page",
+            "match": {
+              "location": "StepDefinition.user_has_to_open_url_of_the_adactin_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 182592500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user has to give username and password",
+            "match": {
+              "location": "StepDefinition.user_has_to_give_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5147983900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "click the login button",
+            "match": {
+              "location": "StepDefinition.click_the_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 462756000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "verify the user can view the next page od adactin",
+            "match": {
+              "location": "StepDefinition.verify_the_user_can_view_the_next_page_od_adactin()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Smoke"
+          }
+        ]
+      },
+      {
+        "line": 11,
+        "name": "To search the hotels availability as per user requirement",
+        "description": "",
+        "id": "to-validate-the-search-of-hotels-in-adactin-page;to-search-the-hotels-availability-as-per-user-requirement",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6217700,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "To search hotels as per user requirement",
+            "match": {
+              "location": "StepDefinition.to_search_hotels_as_per_user_requirement()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 642399500,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is in search page of hotel give all details like Location Hotels RoomType NoOfRooms CheckInDate CheckOutDate AdultsPerRoom ChildrenPerRoom",
+            "match": {
+              "location": "StepDefinition.user_is_in_search_page_of_hotel_give_all_details_like_Location_Hotels_RoomType_NoOfRooms_CheckInDate_CheckOutDate_AdultsPerRoom_ChildrenPerRoom()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 909823700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "click search",
+            "match": {
+              "location": "StepDefinition.click_search()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Sanity"
+          }
+        ]
+      },
+      {
+        "line": 17,
+        "name": "To select the searched hotel",
+        "description": "",
+        "id": "to-validate-the-search-of-hotels-in-adactin-page;to-select-the-searched-hotel",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 54825300,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "To select the searched hotel as per user\u0027s search",
+            "match": {
+              "location": "StepDefinition.to_select_the_searched_hotel_as_per_user_s_search()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 904236000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "click continue",
+            "match": {
+              "location": "StepDefinition.click_continue()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      },
+      {
+        "line": 29,
+        "name": "To get the order number after booking hotel",
+        "description": "",
+        "id": "to-validate-the-search-of-hotels-in-adactin-page;to-get-the-order-number-after-booking-hotel;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5009309200,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "To book the hotel and get the order number",
+            "match": {
+              "location": "StepDefinition.to_book_the_hotel_and_get_the_order_number()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 654484400,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "user has to fill the details for booking  \"Renuka\", \"Devi\", \"Chennai\", \"1234 5678 9874 5879\", \"VISA\", \"February\", \"2015\" \"332\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Renuka\"",
+                  "offset": 42
+                },
+                {
+                  "val": "\"Devi\"",
+                  "offset": 52
+                },
+                {
+                  "val": "\"Chennai\"",
+                  "offset": 60
+                },
+                {
+                  "val": "\"1234 5678 9874 5879\"",
+                  "offset": 71
+                },
+                {
+                  "val": "\"VISA\"",
+                  "offset": 94
+                },
+                {
+                  "val": "\"February\"",
+                  "offset": 102
+                },
+                {
+                  "val": "\"2015\"",
+                  "offset": 114
+                },
+                {
+                  "val": "\"332\"",
+                  "offset": 121
+                }
+              ],
+              "location": "StepDefinition.user_has_to_fill_the_details_for_booking(String,String,String,String,String,String,String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5767359000,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Click Book now",
+            "match": {
+              "location": "StepDefinition.click_Book_now()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "To validate the search of hotels in Adactin page",
+    "description": "",
+    "id": "to-validate-the-search-of-hotels-in-adactin-page",
+    "keyword": "Feature",
+    "uri": "src/test/resources/Featurefiles/Loginsearch.feature",
+    "tags": []
+  }
+]

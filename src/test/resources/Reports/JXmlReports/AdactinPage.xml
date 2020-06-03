@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="27.745977">
+<testcase classname="To validate the search of hotels in Adactin page" name="To verify the user can login to adactin" time="13.796561">
+<system-out><![CDATA[Given user has to open url of the adactin page..............................passed
+When user has to give username and password.................................passed
+And click the login button..................................................passed
+Then verify the user can view the next page od adactin......................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the search of hotels in Adactin page" name="To search the hotels availability as per user requirement" time="1.558662">
+<system-out><![CDATA[Given To search hotels as per user requirement..............................passed
+When user is in search page of hotel give all details like Location Hotels RoomType NoOfRooms CheckInDate CheckOutDate AdultsPerRoom ChildrenPerRoom.passed
+Then click search...........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the search of hotels in Adactin page" name="To select the searched hotel" time="0.959331">
+<system-out><![CDATA[Given To select the searched hotel as per user's search.....................passed
+Then click continue.........................................................passed
+]]></system-out>
+</testcase>
+<testcase classname="To validate the search of hotels in Adactin page" name="To get the order number after booking hotel" time="11.431423">
+<system-out><![CDATA[Given To book the hotel and get the order number............................passed
+When user has to fill the details for booking  "Renuka", "Devi", "Chennai", "1234 5678 9874 5879", "VISA", "February", "2015" "332".passed
+Then Click Book now.........................................................passed
+]]></system-out>
+</testcase>
+</testsuite>

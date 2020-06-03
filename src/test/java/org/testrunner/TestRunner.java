@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(features = "src/test/resources", glue = "org.stepdefinition", dryRun = false, monochrome = true, 
 plugin= {"pretty","html:src\\test\\resources\\Reports\\HtmlReports",
 		"junit:src\\test\\resources\\Reports\\JXmlReports\\AdactinPage.xml",
-		"json:src\\test\\resources\\Reports\\JsonReports\\AdactinHotel.json"})
+		"json:src\\test\\resources\\Reports\\JsonReports\\AdactinHotel.json","rerun: target\\rerun\\rerun.txt"})
 public class TestRunner {
 	@AfterClass
 	public static void JvmReportGeneration() {

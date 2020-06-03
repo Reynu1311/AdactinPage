@@ -6,7 +6,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features= {"@target\\\\rerunrerun.txt"},glue="org.stepdefinition")
+@CucumberOptions(features= {"@target\\rerun\\rerun.txt"},glue="org.stepdefinition")
 public class FailedRunner {
 
 }

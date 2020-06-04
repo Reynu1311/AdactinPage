@@ -14,6 +14,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "user has to open url of the adactin page",
   "keyword": "Given "
@@ -54,6 +57,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "To search the hotels availability as per user requirement",
   "description": "",
@@ -63,6 +69,9 @@ formatter.scenario({
       "name": "@Sanity"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "To search hotels as per user requirement",
@@ -94,6 +103,9 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "To select the searched hotel",
   "description": "",
@@ -103,6 +115,9 @@ formatter.scenario({
       "name": "@Regression"
     }
   ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "To select the searched hotel as per user\u0027s search",
@@ -122,6 +137,9 @@ formatter.match({
   "location": "StepDefinition.click_continue()"
 });
 formatter.result({
+  "status": "passed"
+});
+formatter.after({
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -187,6 +205,9 @@ formatter.scenario({
     }
   ]
 });
+formatter.before({
+  "status": "passed"
+});
 formatter.step({
   "name": "To book the hotel and get the order number",
   "keyword": "Given "
@@ -215,6 +236,11 @@ formatter.match({
   "location": "StepDefinition.click_Book_now()"
 });
 formatter.result({
+  "error_message": "junit.framework.ComparisonFailure: expected:\u003c[Jhkdnjkn88]\u003e but was:\u003c[88385A7IFN]\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat junit.framework.Assert.assertEquals(Assert.java:107)\r\n\tat org.stepdefinition.StepDefinition.click_Book_now(StepDefinition.java:121)\r\n\tat ✽.Click Book now(src/test/resources/Featurefiles/Loginsearch.feature:25)\r\n",
+  "status": "failed"
+});
+formatter.embedding("image/png", "embedded0.png");
+formatter.after({
   "status": "passed"
 });
 });

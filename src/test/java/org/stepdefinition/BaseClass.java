@@ -37,4 +37,8 @@ public class BaseClass {
 		s.selectByValue(value);
 	}
 
+	public void close() {
+		driver.quit();
+	}
+
 }

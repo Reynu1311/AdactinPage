@@ -14,6 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import junit.framework.Assert;
 
 public class StepDefinition extends BaseClass {
 	@Given("user has to open url of the adactin page")
@@ -109,6 +110,7 @@ public class StepDefinition extends BaseClass {
 		s.selectByValue(string7);
 		BookingDetailsClass.CreditcardCVV.sendKeys(string8);
 		BookingDetailsClass.bookNow.click();
+
 	}
 
 	@Then("Click Book now")
@@ -116,6 +118,7 @@ public class StepDefinition extends BaseClass {
 		PageFactory.initElements(driver, BookingConfirmationClass.class);
 		String order = BookingConfirmationClass.OrderNo.getAttribute("value");
 		System.out.println(order);
+		Assert.assertEquals("Jhkdnjkn88",order);
 
 	}
 

@@ -1,27 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="28.393251">
-<testcase classname="To validate the search of hotels in Adactin page" name="To verify the user can login to adactin" time="13.360555">
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="27.731955">
+<testcase classname="To validate the search of hotels in Adactin page" name="To verify the user can login to adactin" time="13.58551">
 <system-out><![CDATA[Given user has to open url of the adactin page..............................passed
 When user has to give username and password.................................passed
 And click the login button..................................................passed
 Then verify the user can view the next page od adactin......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To validate the search of hotels in Adactin page" name="To search the hotels availability as per user requirement" time="1.915478">
+<testcase classname="To validate the search of hotels in Adactin page" name="To search the hotels availability as per user requirement" time="1.371725">
 <system-out><![CDATA[Given To search hotels as per user requirement..............................passed
 When user is in search page of hotel give all details like Location Hotels RoomType NoOfRooms CheckInDate CheckOutDate AdultsPerRoom ChildrenPerRoom.passed
 Then click search...........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To validate the search of hotels in Adactin page" name="To select the searched hotel" time="0.901224">
+<testcase classname="To validate the search of hotels in Adactin page" name="To select the searched hotel" time="0.922948">
 <system-out><![CDATA[Given To select the searched hotel as per user's search.....................passed
 Then click continue.........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="To validate the search of hotels in Adactin page" name="To get the order number after booking hotel" time="12.215994">
-<system-out><![CDATA[Given To book the hotel and get the order number............................passed
+<testcase classname="To validate the search of hotels in Adactin page" name="To get the order number after booking hotel" time="11.851772">
+<failure message="junit.framework.ComparisonFailure: expected:&lt;[Jhkdnjkn88]&gt; but was:&lt;[88385A7IFN]&gt;&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:100)&#13;&#10;&#9;at junit.framework.Assert.assertEquals(Assert.java:107)&#13;&#10;&#9;at org.stepdefinition.StepDefinition.click_Book_now(StepDefinition.java:121)&#13;&#10;&#9;at ✽.Click Book now(src/test/resources/Featurefiles/Loginsearch.feature:25)&#13;&#10;"><![CDATA[Given To book the hotel and get the order number............................passed
 When user has to fill the details for booking  "Renuka", "Devi", "Chennai", "1234 5678 9874 5879", "VISA", "February", "2015" "332".passed
-Then Click Book now.........................................................passed
-]]></system-out>
+Then Click Book now.........................................................failed
+
+StackTrace:
+junit.framework.ComparisonFailure: expected:<[Jhkdnjkn88]> but was:<[88385A7IFN]>
+	at junit.framework.Assert.assertEquals(Assert.java:100)
+	at junit.framework.Assert.assertEquals(Assert.java:107)
+	at org.stepdefinition.StepDefinition.click_Book_now(StepDefinition.java:121)
+	at ✽.Click Book now(src/test/resources/Featurefiles/Loginsearch.feature:25)
+]]></failure>
 </testcase>
 </testsuite>
